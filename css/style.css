@@ -15,6 +15,7 @@
 
 body {
     background-color: #F5F5F5;
+    width: 100%;
 }
 
 /* #4 # sweat #uppercase buttons and w3w locations */
@@ -22,25 +23,45 @@ button, strong {
     text-transform: uppercase;
 }
 
-
-
+/*POSİTİONS*/
+#channels {
+    position: absolute;
+    left: 0px;
+    width: 40%;
+    height: 100%;
+}
+#chat {
+    position: absolute;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+}
+h1 img {
+    padding: 15px 0px 0px 15px;
+}
 /* APP BAR */
 
 /* #4 #sweat address both #app-bar s */
 h1 {
     background-color: #3F51B5;
     color: white;
+    font-weight: 100;
+    height: 64px;
+    font-size: 20px;
+    line-height: 64px;
+    padding: 0px 0px 8px 0px;
 }
-
 
 /* CHANNELS LIST */
 
 /* #4 #sweat #channels */
-ul {
+ul, {
     /* #3 #channels #list modifies h2 to ul */
     background-color: white;
     /* #3 #channels #bullets removed */
     list-style-type: none;
+    height: 80%;
+    overflow: auto;
 }
 
 li {
@@ -62,6 +83,17 @@ li.selected {
 li img {
     /* #4 #middle vertical alignment of icons in the #channels list */
     vertical-align: middle;
+    position: absolute;
+    right: 12px;
+
+    
+}
+
+.channel-meta {
+    position: absolute;
+    right: 0px;
+    vertical-align: middle;
+    font-weight: 900;
 }
 
 /* TAB BAR */
@@ -72,6 +104,8 @@ li img {
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* #4 add styles to #tab-bar #buttons */
@@ -143,3 +177,27 @@ li img {
     margin-left: 17.5%;
 }
 
+h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*emoji bar*/
+#chat-bar {
+    background-color: white;
+    font-weight: 100;
+    height: 64px;
+    font-size: 20px;
+    line-height: 64px;
+}
+
+#emojis {
+    background-color: white;
+    border: black thin;
+    text-align: left;
+    overflow: auto;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -360px;
+}
